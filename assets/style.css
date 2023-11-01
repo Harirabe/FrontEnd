@@ -1,0 +1,710 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/** end reset css**/
+
+body {
+    max-width: 1140px;
+    margin: auto;
+    font-family: 'Work Sans';
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 50px 0*/
+}
+
+.login a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login a:link {
+    text-decoration: none;
+}
+
+section {
+    margin: 50px 0
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Syne';
+    font-size: 22px;
+    font-weight: 800;
+    color: #B1663C
+}
+
+h1>span {
+    font-family: 'Work Sans';
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    ;
+}
+
+h2 {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 30px;
+    color: #1D6154
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 0 10px;
+    font-size: 1.2em;
+}
+
+li:hover {
+    color: #B1663C;
+}
+
+#introduction {
+    display: flex;
+    align-items: center;
+}
+
+#introduction figure {
+    flex: 1
+}
+
+#introduction img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#introduction article {
+    flex: 1
+}
+
+#introduction h2 {
+    margin-bottom: 1em;
+}
+
+#introduction p {
+    margin-bottom: 0.5em;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.filtre-tous {
+    color: green;
+    padding: 2em;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+}
+
+.sous-photo {
+    position: relative;
+    left: 4em;
+}
+
+.bouton {
+    height: 37px;
+    border: 1px solid #1D6154;
+    border-radius: 60px;
+    background-color: white;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #1D6154;
+    margin-left: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.bouton:active {
+    color: white;
+    background-color: #1D6154;
+}
+
+#contact {
+    width: 50%;
+    margin: auto;
+}
+
+#contact>* {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact form {
+    text-align: left;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact label {
+    margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+.loginPage {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    font-family: 'Syne';
+    font-weight: 700;
+    color: white;
+    background-color: gray;
+    margin: 2em auto;
+    width: 180px;
+    text-align: center;
+    border-radius: 60px;
+}
+
+.motdePasse {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em;
+}
+
+.head-token {
+    display: none;
+}
+
+.projets-modifier {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.js-modal {
+    position: relative;
+    left: 2em;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.bloc-modal {
+    overflow: auto;
+    width: 600px;
+    height: 732px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.head-modifier {
+    display: flex;
+    justify-content: center;
+    height: 59px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: #000000;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.head-modifier i {
+    position: relative;
+    right: 10px;
+}
+
+.bouton-head {
+    height: 38px;
+    width: 216px;
+    left: 688px;
+    top: 10px;
+    border-radius: 60px;
+    background: #FFFFFF;
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.head-base {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc-bouton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+.image-modal img {
+    width: 78px;
+    height: 104px;
+    padding: 1em;
+}
+
+.image-modal figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+}
+
+.galerie-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.head-modal1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.js-modal-close {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.titre-modal {
+    display: flex;
+    justify-content: center;
+    font-family: Work Sans;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.image-modal {
+    position: relative;
+}
+
+.icone-supprimer {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: #000000;
+}
+
+.icone-supprimer i {
+    color: white;
+}
+
+.footer-modal1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5em;
+    border-top: solid 1px gray;
+}
+
+.js-modal2 {
+    height: 37px;
+    width: 237px;
+    border: 1px solid #1D6154;
+    border-radius: 60px;
+    background-color: white;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    padding-right: 2em;
+    padding-left: 2em;
+    background-color: #1D6154;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 9em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.supprimer-galerie {
+    background: none;
+    border: none;
+    color: #D65353;
+}
+
+.bloc-photo {
+    height: 250px;
+    width: 420px;
+    left: 510px;
+    top: 786px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E8F1F6;
+    margin-left: 7em;
+    margin-top: 3em;
+}
+
+.bloc-photo i {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    top: 6px;
+    border-radius: 0px;
+    font-size: 5em;
+    margin-top: 0.5em;
+}
+
+.bouton-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.retour-modal1 {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.js-modal-close2 {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.titre-photo {
+    display: flex;
+    justify-content: center;
+    font-family: Work Sans;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+form-photo {
+    display: flex;
+    flex-direction: column;
+}
+
+output {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+output .image {
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+output .image img {
+    height: 100%;
+    width: 100%;
+}
+
+output .image span {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+}
+
+output .image span:hover {
+    opacity: 0.8;
+}
+
+output .span--hidden {
+    visibility: hidden;
+}
+
+.bouton-upload {
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    width: 173px;
+    left: 633px;
+    top: 881px;
+    border-radius: 50px;
+    background: #CBD6DC;
+    border: none;
+    margin-left: 8em;
+    align-items: center;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #306685;
+    font-weight: bold;
+}
+
+.texte-upload {
+    display: flex;
+    margin-left: 10em;
+    margin-top: 0.5em;
+}
+
+.titre-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.categories-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid 1px gray;
+    padding-bottom: 3em;
+}
+
+#titre-requis {
+    height: 51px;
+    left: 510px;
+    top: 1011px;
+    border-radius: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    border: none;
+}
+
+#categories {
+    height: 51px;
+    left: 510px;
+    top: 1109px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    margin-top: 1em;
+    border: none;
+}
+
+.bouton-valider {
+    display: flex;
+    color: #A7A7A7;
+    border: none;
+    height: 36px;
+    justify-content: center;
+}
